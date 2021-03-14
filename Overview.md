@@ -428,7 +428,9 @@ In shortAssemble there is the very important concept introduce of limiting expon
 
 Now we come to perhaps the most significant contribution of the method, known as "bridging".
 
-"FMLRC dynamically adjusts these thresholds at run-time for each pass over a long read. A single process will correct the read using the implicit short k-mer de Bruijn graph and then the implicit long K-mer de Bruijn graph". In this way the approach is computationally efficient because we are spending our resources on matching short k-mers to correct the long read, instead of matching an entire long read versus another long read. And also by briding we are creating "seed" start and end points to assemble the best possible matching short read sequence using the FM Index as an implicity de Bruijn graph because of the sequential and fast look up properites of the data structure.
+"FMLRC dynamically adjusts these thresholds at run-time for each pass over a long read. A single process will correct the read using the implicit short k-mer de Bruijn graph and then the implicit long K-mer de Bruijn graph".
+
+In this way the approach is computationally efficient because we are spending our resources on matching short k-mers to correct the long read, instead of matching an entire long read versus another long read. By bridging we are creating "seed" start and end points to assemble the best possible matching short read sequence using the FM Index as an implicit de Bruijn graph because of the sequential and fast look up properites of the data structure.
 
 ```cpp
 //try to extend the bridge
