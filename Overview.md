@@ -1,5 +1,5 @@
 
-# Efficient Sequencing of Genomic Data
+# Efficient Sequencing and Aligning of Genomic Data
 
 
 <h2> Burrows-Wheeler Transform </h2>
