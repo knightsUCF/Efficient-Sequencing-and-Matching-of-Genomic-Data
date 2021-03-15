@@ -25,7 +25,6 @@ public class SequenceList : MonoBehaviour
     void Awake()
     {
         cam = FindObjectOfType<Cam>();
-        Debug.Log(rows.GetType());
     }
 
 
