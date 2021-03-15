@@ -8,12 +8,11 @@ using UnityEngine.UI;
 public class AddEndOfLineMarker : MonoBehaviour
 {
 
+    public Text headingText;
+    public GameObject flashingCube;
+    
     Cam cam;
     SequenceList sequenceList;
-
-    public Text headingText;
-
-    public GameObject flashingCube;
 
 
     void Awake()
