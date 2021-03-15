@@ -30,7 +30,6 @@ public class Reset : MonoBehaviour
     public void Run()
     {
 
-        
         // reset level to 1
 
         State.level.current = 1;
