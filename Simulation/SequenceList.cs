@@ -7,28 +7,16 @@ using UnityEngine;
 public class SequenceList : MonoBehaviour
 {
 
-
-    public List<GameObject> sequence = new List<GameObject>();
-
-    List<List<GameObject>> rows = new List<List<GameObject>>(); 
-
-
-    public void AddSequenceToRow(int row, List<GameObject> rowSequence)
-    {
-        // rows[row].Add(rowSequence);
-    }
-
-
-
-
-
     public GameObject nucleotideA;
     public GameObject nucleotideC;
     public GameObject nucleotideG;
     public GameObject nucleotideT;
+    
+    public List<GameObject> sequence = new List<GameObject>();
+
+    List<List<GameObject>> rows = new List<List<GameObject>>(); 
 
     Vector3 positionToSpawn = Vector3.zero;
-
     float offset = 1.25f;
 
     Cam cam;
@@ -101,7 +89,7 @@ public class SequenceList : MonoBehaviour
     {
         sequence.Add(go);
     }
-
+   
 
     public List<GameObject> Get()
     {
