@@ -4,7 +4,7 @@
 
 <h2> Burrows-Wheeler Transform </h2>
 
-Sequencing of genomic data requires large processing considerations with characters up to 4 billion per a homo sapiens sequence. A number of methods have been proposed to optimize the storing and processing of data. One of these is the Burrows-Wheeler algorithm.
+Sequencing of genomic data requires large processing considerations with characters up to 4 billion per a homo sapiens sequence. A number of methods have been proposed to optimize the storing and processing of data. One of these is the Burrows-Wheeler Transform algorithm, along with the FM Index, a data structure built on top of the BWT.
 
 ```Python
 
