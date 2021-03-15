@@ -422,7 +422,7 @@ The other 2 major functions found in main.cpp are: (too long to include here)
 
 2) correctionPass
 
-In shortAssemble there is the very important concept introduce of limiting exponential branching. So if we can't find a matching sequence we can limit the pass so the computations don't get stuck in exponential variations.
+In shortAssemble there we have the method of limiting exponential branching. So if we can't find a matching sequence we can limit the pass so the computations don't get stuck in exponential variations.
 
 <h4>Significant Contribution</h4>
 
