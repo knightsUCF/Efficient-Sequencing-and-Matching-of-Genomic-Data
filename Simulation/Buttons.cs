@@ -7,16 +7,16 @@ using UnityEngine.UI;
 public class Buttons : MonoBehaviour
 {
 
+    public Text headingText;
+    public GameObject nucleotideButtons;
+    public GameObject advanceArrow;
+    
     SequenceList sequenceList;
     AddEndOfLineMarker addEndOfLineMarker;
     Reset reset;
     Rotate rotate;
     Sort sort;
     Cam cam;
-
-    public Text headingText;
-    public GameObject nucleotideButtons;
-    public GameObject advanceArrow;
 
 
     void Awake()
@@ -35,15 +35,18 @@ public class Buttons : MonoBehaviour
         sequenceList.Add(1);
     }
 
+
     public void OnClickC()
     {
         sequenceList.Add(2);
     }
 
+
     public void OnClickG()
     {
         sequenceList.Add(3);
     }
+
 
     public void OnClickT()
     {
@@ -97,11 +100,13 @@ public class Buttons : MonoBehaviour
             return;
         }
     }
+    
 
     public void OnClickReset()
     {
         reset.Run();
     }
+    
 
     public void ShowAdvanceArrow()
     {
